@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample Page</title>
+    <style>
+      .bg-slider {
+	width: 100vw;
+	height: 100vh;
+	background-position:center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bg-slider__title{
+	color: #fff;
+	font-size: 48px;
+	line-height: 1.5;
+	font-weight: bold;
+	text-align:center;
+	text-shadow: 1px 1px 1px #000;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="bg-slider">
+  <h1 class="bg-slider__title">iMac Retina 5K</h1>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="jquery.bgswitcher.js"></script>
+<script>
+jQuery(function($) {
+    $('.bg-slider').bgSwitcher({
+        images: ['img/image1.JPG','img/image2.JPG','img/image3.JPG'], // 切り替える背景画像を指定
+    });
+});
+</script>
+  </body>
+</html>
